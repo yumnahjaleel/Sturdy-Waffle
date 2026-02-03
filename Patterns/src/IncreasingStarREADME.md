@@ -6,7 +6,7 @@ The Solution: StringBuilderTo optimize this, we can use a StringBuilder.
 Instead of printing star by star, we build the entire pattern as one large string in memory and print it once at the very end.
 While the mathematical complexity remains O(n^2) (because you still have to "touch" every star once),
 the execution time is significantly faster for large inputs.
----
+
 Method,Complexity,How it handles I/O: 
 Nested Loops with print(),O(n2),"Frequent, slow interrupts to the OS for every star."
 StringBuilder Buffer,O(n2),Fast memory operations; only one interrupt to the OS.
@@ -84,4 +84,5 @@ System.out.print(pattern.toString());
 | **Row 2** | Append `* * ` + `\n` | `"* \n* * \n"` |
 | **Row 3** | Append `* * * ` + `\n` | `"* \n* * \n* * * \n"` |
 | **End** | Print everything | (The full triangle appears instantly) |
+
 
